@@ -1,0 +1,90 @@
+﻿
+
+ /*--------------------------------------------------------
+general blue table
+--------------------------------------------------------------*/
+.coltable {
+  font-family: OpenSansLight;
+  font-size: 14px;
+  color: #888;
+  margin: 0 auto;
+  width: 960px;
+  border-collapse: collapse;
+}
+.coltable thead #setlabel{
+	
+	background:#fff;
+}
+.coltable thead th,.coltable  th  {
+	text-align: center;
+  font-size: 20px;
+color: #4183c4;
+  height: 40px;
+  border: 1px solid #e6eaed;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e7f0fa), to(#dbe8f5));
+}
+
+
+.coltable tr:nth-child(1n) { background: #fff; }
+.coltable tr:nth-child(2n) { background: #f6f9fb; }
+
+.coltable td {
+	padding-left:2em;
+  height: 40px;
+  width: 230px;
+  font-weight: bold;
+  border-bottom: 1px solid #e6eaed;
+  border-right: 1px solid #e6eaed;
+}
+
+
+
+ /*--------------------------------------------------------
+keyval table
+--------------------------------------------------------------*/
+.kvtable {
+font-family: OpenSansLight;
+font-size: 14px;
+color: #888;
+margin: 0 auto;
+width: 960px;
+border-collapse: collapse;
+}
+.kvtable thead #setlabel{
+	
+	background:#fff;
+}
+.kvtable thead th {
+	text-align: center;
+  font-size: 20px;
+color: #4183c4;
+  height: 40px;
+  border: 1px solid #e6eaed;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e7f0fa), to(#dbe8f5));
+}
+
+/*td:first-of-type*/
+ .kvtable td:nth-child(1n) { 
+	padding-left: 40px;
+  width: 100px;
+  text-align: left;
+  border-left: 1px solid #e6eaed;
+  border-right:  none;
+  font-weight: 200;
+	
+	}
+.kvtable	td:nth-child(2n) {
+		  width: 230px;
+		  text-align: left;
+			padding-left: 40px;
+		}
+
+.kvtable td:nth-child(1n) { background: #f6f9fb;  }
+.kvtable td:nth-child(2n) {background: #fff; }
+.kvtable td {
+  height: 40px;
+  width: 230px;
+  font-weight: bold;
+  border-bottom: 1px solid #e6eaed;
+  border-right: 1px solid #e6eaed;
+}

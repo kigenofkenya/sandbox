@@ -1,0 +1,93 @@
+<html>
+<head><title>Ractive component demo</title>
+<link rel="stylesheet" href="fonts/fonts.css" media="screen" type="text/css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/tables.css" media="screen" type="text/css" />
+</head>
+
+<body>
+  <h1>Ractive Dev</h1>
+  <div id="foo"></div>
+  <div id="bar"></div> 
+<script id='template2' type='text/ractive'>
+  {{#with parent}}
+    {{#each children}}
+      <p>{{name}} is a child of {{../../name}}</p>
+    {{/each}}
+  {{/with}}
+</script>
+<script id='template1' type='text/ractive'>
+{{#rows:i}}
+  <p>Item {{i}}: {{name}} ; {{}}</p>
+{{/items}}
+</script>
+
+<script type="text/ractive" id="t">
+  <table class="coltable">
+    <thead>
+        <tr>
+            <th id="setlabel">Dataset Name</th>
+        </tr>
+        <tr>
+          {{#columns:i}}
+            <th>{{name}}</th>
+          {{/columns}}
+        </tr>
+    </thead>
+    <tbody>
+      {{#rows:rowIndex}}    
+        <tr>
+          {{#columns:columnIndex}}
+            <td>{{#if rows[rowIndex][id]}} {{rows[rowIndex][id]}} {{else}} no data {{/if}}</td>
+          {{/columns}}    
+        </tr>
+      {{/rows}}        
+    </tbody>
+</table>
+{{#if signedIn}}<p>signed in</p>{{else}}<p>not signed in</p>{{/if}}            
+</script>
+  <script src="bower_components/ractive/ractive.min.js"></script>
+  <script src="bower_components/ractive-load/dist/ractive-load.min.js"></script>
+
+
+  <script>
+
+
+   Ractive.DEBUG = false;
+    var ractive;
+
+// new Ractive({
+//   el: '#foo',
+//   template: '#template2',
+//   data: {
+//     parent: {
+//       name: 'bob',
+//       children: [
+//         { name: 'sally' },
+//         { name: 'fred' },
+//         { name: 'lucy' }
+//       ]
+//     }
+//   }
+// })
+new Ractive({
+  el: '#foo',
+  template: '#t',
+  data: {
+    signedIn:false,
+    columns: [
+      {name:'Name', id: 'name'}, 
+      {name: 'Description', id: 'description'}, 
+      {name:'Reference', id:'ref'},
+      {name:'Boolean', id:'bool'}      
+    ],
+    rows: [
+      {name:'item 1', description: 'description 1', ref: 'ref 1'},
+      {name:'item 2', ref: 'ref 2'}
+    ]
+  }
+})
+
+  </script>
+</body>
+</html>
