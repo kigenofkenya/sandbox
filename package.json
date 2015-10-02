@@ -1,0 +1,23 @@
+{
+  "name": "sandbox",
+  "version": "0.0.1",
+  "description": "development sandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kigenofkenya/sandbox.git"
+  },
+  "keywords": [
+    "dev",
+    "sandbox"
+  ],
+  "author": "Ahmed Nzibo <a.nzibo@gmail.com> (https://github.com/kigenofkenya)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kigenofkenya/sandbox/issues"
+  },
+  "homepage": "https://github.com/kigenofkenya/sandbox#readme"
+}
