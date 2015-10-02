@@ -1,0 +1,31 @@
+{
+  "name": "sandbox",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kigenofkenya/sandbox",
+  "authors": [
+    "Ahmed Nzibo <a.nzibo@gmail.com>"
+  ],
+  "description": "Development sandbox",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dev",
+    "sandbox"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "ractive": "~0.7.3",
+    "reset-css": "~2.0.2011012602",
+    "ractive-load": "~0.5.2"
+  }
+}
