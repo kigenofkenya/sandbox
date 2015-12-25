@@ -4,7 +4,8 @@
         "catalog",
         "codeex",
         "expandable-chapters",
-        "fbqx"
+        "fbqx",
+        "js-sequence-hand-diagram"
     ],
     "pluginsConfig": {}
 }
