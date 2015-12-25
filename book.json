@@ -6,7 +6,8 @@
         "expandable-chapters",
         "fbqx",
         "js-sequence-hand-diagram",
-        "mermaid-2"
+        "mermaid-2",
+        "search"
     ],
     "pluginsConfig": {}
 }
