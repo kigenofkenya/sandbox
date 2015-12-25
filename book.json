@@ -3,7 +3,8 @@
         "ace",
         "catalog",
         "codeex",
-        "expandable-chapters"
+        "expandable-chapters",
+        "fbqx"
     ],
     "pluginsConfig": {}
 }
