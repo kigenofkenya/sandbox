@@ -7,7 +7,8 @@
         "fbqx",
         "js-sequence-hand-diagram",
         "mermaid-2",
-        "search"
+        "search",
+        "scrollablecode"
     ],
     "pluginsConfig": {}
 }
