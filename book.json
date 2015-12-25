@@ -9,7 +9,8 @@
         "mermaid-2",
         "search",
         "scrollablecode",
-        "structured-toc"
+        "structured-toc",
+        "style-rewrite"
     ],
     "pluginsConfig": {}
 }
