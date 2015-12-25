@@ -10,7 +10,8 @@
         "search",
         "scrollablecode",
         "structured-toc",
-        "style-rewrite"
+        "style-rewrite",
+        "tonic"
     ],
     "pluginsConfig": {}
 }
