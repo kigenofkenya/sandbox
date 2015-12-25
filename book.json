@@ -5,7 +5,8 @@
         "codeex",
         "expandable-chapters",
         "fbqx",
-        "js-sequence-hand-diagram"
+        "js-sequence-hand-diagram",
+        "mermaid-2"
     ],
     "pluginsConfig": {}
 }
